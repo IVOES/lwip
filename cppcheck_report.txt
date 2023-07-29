@@ -1,0 +1,1667 @@
+contrib/addons/tcp_md5/tcp_md5.c:515:17: style: Condition 'addr_valid' is always false [knownConditionTrueFalse]
+            if (addr_valid) {
+                ^
+contrib/addons/tcp_md5/tcp_md5.c:493:30: note: Assignment 'addr_valid=0', assigned value is 0
+            int addr_valid = 0;
+                             ^
+contrib/addons/tcp_md5/tcp_md5.c:515:17: note: Condition 'addr_valid' is always false
+            if (addr_valid) {
+                ^
+contrib/addons/tcp_md5/tcp_md5.c:357:17: style: The scope of the variable 'opts' can be reduced. [variableScope]
+    const u8_t *opts;
+                ^
+contrib/apps/httpserver/httpserver-netconn.c:77:65: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("http_server: invalid conn", (conn != NULL), return;);
+                                                                ^
+contrib/apps/ping/ping.c:296:25: style: The scope of the variable 'iecho' can be reduced. [variableScope]
+  struct icmp_echo_hdr *iecho;
+                        ^
+contrib/apps/shell/shell.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+contrib/apps/tcpecho/tcpecho.c:57:61: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("tcpecho: invalid conn", (conn != NULL), return;);
+                                                            ^
+contrib/apps/udpecho/udpecho.c:54:61: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("udpecho: invalid conn", (conn != NULL), return;);
+                                                            ^
+contrib/apps/udpecho/udpecho.c:58:61: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("udpecho: invalid conn", (conn != NULL), return;);
+                                                            ^
+contrib/examples/example_app/test.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 36 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+contrib/examples/example_app/test.c:594:0: information: Skipping configuration 'LWIP_APP_INIT' since the value of 'LWIP_APP_INIT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_APP_INIT();
+^
+contrib/examples/mdns/mdns_example.c:41:3: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_ERROR is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("mdns add service txt failed\n", (res == ERR_OK), return);
+  ^
+contrib/ports/freertos/sys_arch.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+contrib/ports/unix/port/netif/list.c:77:9: style: The scope of the variable 'data' can be reduced. [variableScope]
+  void *data;
+        ^
+contrib/ports/unix/port/netif/tapif.c:411:7: style: The scope of the variable 'ret' can be reduced. [variableScope]
+  int ret;
+      ^
+contrib/ports/unix/port/netif/vdeif.c:321:7: style: The scope of the variable 'ret' can be reduced. [variableScope]
+  int ret;
+      ^
+contrib/ports/unix/port/sys_arch.c:557:17: style: Checking if unsigned expression 'sem->c' is less than zero. [unsignedLessThanZero]
+  while (sem->c <= 0) {
+                ^
+contrib/ports/unix/port/sys_arch.c:111:9: style: struct member 'sys_mbox_msg::msg' is never used. [unusedStructMember]
+  void *msg;
+        ^
+contrib/ports/win32/check/time.c:22:14: style: The scope of the variable 'tzflag' can be reduced. [variableScope]
+  static int tzflag;
+             ^
+contrib/ports/win32/pcapif.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 16 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+contrib/ports/win32/pcapif.c:814:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  unsigned char buffer[ETH_MAX_FRAME_LEN + ETH_PAD_SIZE];
+^
+contrib/ports/win32/pcapif.c:818:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  u16_t tot_len = p->tot_len - ETH_PAD_SIZE;
+^
+contrib/ports/win32/pcapif.c:826:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if ((p->len == p->tot_len) && (p->len >= ETH_MIN_FRAME_LEN + ETH_PAD_SIZE)) {
+^
+contrib/ports/win32/pcapif.c:828:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    buf = &((unsigned char*)p->payload)[ETH_PAD_SIZE];
+^
+contrib/ports/win32/pcapif.c:845:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        MEMCPY(ptr, &((char*)q->payload)[ETH_PAD_SIZE], q->len - ETH_PAD_SIZE);
+^
+contrib/ports/win32/pcapif.c:846:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        ptr += q->len - ETH_PAD_SIZE;
+^
+contrib/ports/win32/pcapif.c:924:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  p = pbuf_alloc(PBUF_RAW, (u16_t)length + ETH_PAD_SIZE, PBUF_POOL);
+^
+contrib/ports/win32/pcapif.c:940:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_ASSERT("q->len >= ETH_PAD_SIZE", q->len >= ETH_PAD_SIZE);
+^
+contrib/ports/win32/pcapif.c:941:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        copy_len -= ETH_PAD_SIZE;
+^
+contrib/ports/win32/pcapif.c:943:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        MEMCPY(&((char*)q->payload)[ETH_PAD_SIZE], &((const char*)packet)[start], copy_len);
+^
+contrib/ports/win32/pcapif.c:954:0: information: Skipping configuration 'ETH_PAD_SIZE;LWIP_ETHERNET' since the value of 'ETH_PAD_SIZE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    MIB2_STATS_NETIF_ADD(netif, ifinoctets, p->tot_len - ETH_PAD_SIZE);
+^
+contrib/ports/win32/pcapif.c:925:83: warning: Either the condition 'p!=NULL' is redundant or there is possible null pointer dereference: p. [nullPointerRedundantCheck]
+  LWIP_DEBUGF(NETIF_DEBUG, ("netif: recv length %i p->tot_len %i\n", length, (int)p->tot_len));
+                                                                                  ^
+contrib/ports/win32/pcapif.c:927:9: note: Assuming that condition 'p!=NULL' is not redundant
+  if (p != NULL) {
+        ^
+contrib/ports/win32/pcapif.c:925:83: note: Null pointer dereference
+  LWIP_DEBUGF(NETIF_DEBUG, ("netif: recv length %i p->tot_len %i\n", length, (int)p->tot_len));
+                                                                                  ^
+contrib/ports/win32/pcapif.c:558:10: style: The scope of the variable 'descBuf' can be reduced. [variableScope]
+    char descBuf[128];
+         ^
+contrib/ports/win32/pcapif.c:559:12: style: The scope of the variable 'len' can be reduced. [variableScope]
+    size_t len;
+           ^
+contrib/ports/win32/pcapif.c:758:0: information: Skipping configuration 'LWIP_ETHERNET;PACKET_LIB_ADAPTER_GUID' since the value of 'PACKET_LIB_ADAPTER_GUID' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  adapter_num = get_adapter_index(PACKET_LIB_ADAPTER_GUID);
+^
+contrib/ports/win32/pcapif.c:760:0: information: Skipping configuration 'LWIP_ETHERNET;PACKET_LIB_ADAPTER_GUID' since the value of 'PACKET_LIB_ADAPTER_GUID' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    printf("ERROR finding network adapter with GUID \"%s\"!\n", PACKET_LIB_ADAPTER_GUID);
+^
+contrib/ports/win32/pcapif.c:742:0: information: Skipping configuration 'LWIP_ETHERNET;PACKET_LIB_ADAPTER_GUID;PACKET_LIB_GET_ADAPTER_NETADDRESS' since the value of 'PACKET_LIB_GET_ADAPTER_NETADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  PACKET_LIB_GET_ADAPTER_NETADDRESS(&netaddr);
+^
+contrib/ports/win32/pcapif.c:742:0: information: Skipping configuration 'LWIP_ETHERNET;PACKET_LIB_GET_ADAPTER_NETADDRESS' since the value of 'PACKET_LIB_GET_ADAPTER_NETADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  PACKET_LIB_GET_ADAPTER_NETADDRESS(&netaddr);
+^
+contrib/ports/win32/pcapif_helper.c:100:10: warning: Either the condition 'ret==NULL' is redundant or there is possible null pointer dereference: ret. [nullPointerRedundantCheck]
+  memcpy(ret, data, len);
+         ^
+contrib/ports/win32/pcapif_helper.c:96:11: note: Assuming that condition 'ret==NULL' is not redundant
+  if (ret == NULL) {
+          ^
+contrib/ports/win32/pcapif_helper.c:100:10: note: Null pointer dereference
+  memcpy(ret, data, len);
+         ^
+doc/ZeroCopyRx.c:13:28: style: Variable 'my_puf' is assigned a value that is never used. [unreadVariable]
+  my_custom_pbuf_t* my_puf = (my_custom_pbuf_t*)p;
+                           ^
+src/api/api_lib.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 24 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/api/api_lib.c:274:77: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("netconn_getaddr: invalid conn", (conn != NULL), return ERR_ARG;);
+                                                                            ^
+src/api/api_lib.c:1296:0: information: Skipping configuration 'LWIP_DNS;LWIP_HOOK_NETCONN_EXTERNAL_RESOLVE;LWIP_NETCONN' since the value of 'LWIP_HOOK_NETCONN_EXTERNAL_RESOLVE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (LWIP_HOOK_NETCONN_EXTERNAL_RESOLVE(name, addr, NETCONN_DNS_DEFAULT, &err)) {
+^
+src/api/api_lib.c:73:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/api/api_msg.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 28 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/api/api_msg.c:1411:17: error: Syntax Error: AST broken, 'while' doesn't have two operands. [internalAstError]
+        } while (0));
+                ^
+src/api/netbuf.c:104:69: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("netbuf_alloc: invalid buf", (buf != NULL), return NULL;);
+                                                                    ^
+src/api/sockets.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 83 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/apps/http/altcp_proxyconnect.c:132:12: style: Condition 'len<0' is always false [knownConditionTrueFalse]
+  if ((len < 0) || (int)alloc_len != len) {
+           ^
+src/apps/http/altcp_proxyconnect.c:122:11: note: Assuming that condition 'len<0' is not redundant
+  if (len < 0) {
+          ^
+src/apps/http/altcp_proxyconnect.c:129:3: note: Compound assignment '+=', assigned value is 15
+  len += 16; /* worst-case IPv4 address length */
+  ^
+src/apps/http/altcp_proxyconnect.c:132:12: note: Condition 'len<0' is always false
+  if ((len < 0) || (int)alloc_len != len) {
+           ^
+src/apps/http/altcp_proxyconnect.c:105:19: warning: Possible null pointer dereference: buffer [nullPointer]
+  return snprintf(buffer, bufsize, PROXY_CONNECT_FORMAT(host, port));
+                  ^
+src/apps/http/altcp_proxyconnect.c:121:43: note: Calling function 'altcp_proxyconnect_format_request', 1st argument 'NULL' value is 0
+  len = altcp_proxyconnect_format_request(NULL, 0, "", state->outer_port);
+                                          ^
+src/apps/http/altcp_proxyconnect.c:105:19: note: Null pointer dereference
+  return snprintf(buffer, bufsize, PROXY_CONNECT_FORMAT(host, port));
+                  ^
+src/apps/http/altcp_proxyconnect.c:132:12: style: Condition 'len<0' is always false [knownConditionTrueFalse]
+  if ((len < 0) || (int)alloc_len != len) {
+           ^
+src/apps/http/altcp_proxyconnect.c:122:11: note: Assuming that condition 'len<0' is not redundant
+  if (len < 0) {
+          ^
+src/apps/http/altcp_proxyconnect.c:127:3: note: Compound assignment '+=', assigned value is 39
+  len += 40; /* worst-case IPv6 address length */
+  ^
+src/apps/http/altcp_proxyconnect.c:132:12: note: Condition 'len<0' is always false
+  if ((len < 0) || (int)alloc_len != len) {
+           ^
+src/apps/http/httpd.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 48 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/apps/http/httpd_structs.h:108:0: information: Skipping configuration 'HTTPD_ADDITIONAL_CONTENT_TYPES;LWIP_HTTPD_DYNAMIC_HEADERS' since the value of 'HTTPD_ADDITIONAL_CONTENT_TYPES' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  , HTTPD_ADDITIONAL_CONTENT_TYPES
+^
+src/apps/http/httpd.c:105:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/apps/http/makefsdata/makefsdata.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 29 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/apps/http/makefsdata/tinydir.h:195:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ _tinydir_char_t path[_TINYDIR_PATH_MAX];
+^
+src/apps/http/makefsdata/tinydir.h:212:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ _tinydir_char_t path[_TINYDIR_PATH_MAX];
+^
+src/apps/http/makefsdata/tinydir.h:282:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (_tinydir_strlen(path) + _TINYDIR_PATH_EXTRA >= _TINYDIR_PATH_MAX)
+^
+src/apps/http/makefsdata/tinydir.h:524:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  _TINYDIR_PATH_MAX)
+^
+src/apps/http/makefsdata/tinydir.h:609:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ _tinydir_char_t path[_TINYDIR_PATH_MAX];
+^
+src/apps/http/makefsdata/tinydir.h:638:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ _tinydir_char_t dir_name_buf[_TINYDIR_PATH_MAX];
+^
+src/apps/http/makefsdata/tinydir.h:652:0: information: Skipping configuration 'PATH_MAX;__linux__' since the value of 'PATH_MAX' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (_tinydir_strlen(path) + _TINYDIR_PATH_EXTRA >= _TINYDIR_PATH_MAX)
+^
+src/apps/http/makefsdata/makefsdata.c:981:3: warning:inconclusive: The buffer 'varname' may not be null-terminated after the call to strncpy(). [terminateStrncpy]
+  strncpy(varname, qualifiedName, sizeof(varname));
+  ^
+src/apps/mdns/mdns.c:2158:0: information: Skipping configuration 'LWIP_IGMP;LWIP_MDNS_RESPONDER;LWIP_IPV6_MLD;LWIP_MDNS_RESPONDER;LWIP_MDNS_RESPONDER;LWIP_UDP;LWIP_RAND' since the value of 'LWIP_RAND' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      sys_timeout(MDNS_RESPONSE_TC_DELAY_MS, mdns_handle_tc_question, pkt);
+^
+src/apps/mdns/mdns.c:2797:0: information: Skipping configuration 'LWIP_IGMP;LWIP_MDNS_RESPONDER;LWIP_IPV6_MLD;LWIP_MDNS_RESPONDER;LWIP_MDNS_RESPONDER;LWIP_UDP;LWIP_RAND' since the value of 'LWIP_RAND' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  mdns_resp_restart_delay(netif, MDNS_INITIAL_PROBE_DELAY_MS);
+^
+src/apps/mdns/mdns_domain.c:308:7: style: The scope of the variable 'res' can be reduced. [variableScope]
+  int res;
+      ^
+src/apps/snmp/snmp_msg.c:183:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:221:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:238:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:250:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:183:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:221:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:238:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:250:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_msg.c:391:15: style: Variable 'err' is assigned a value that is never used. [unreadVariable]
+          err = snmp_sendto(request.handle, request.outbound_pbuf, request.source_ip, request.source_port);
+              ^
+src/apps/snmp/snmp_msg.c:52:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/apps/snmp/snmp_traps.c:145:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:162:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:383:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:145:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:162:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:383:0: information: Skipping configuration 'LWIP_ASSERT_SNMP_LOCKED;LWIP_SNMP;SNMP_USE_RAW' since the value of 'LWIP_ASSERT_SNMP_LOCKED' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT_SNMP_LOCKED();
+^
+src/apps/snmp/snmp_traps.c:351:17: style: Variable 'tot_len' is assigned a value that is never used. [unreadVariable]
+  u16_t tot_len = 0;
+                ^
+src/apps/sntp/sntp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/apps/tftp/tftp.c:124:10: style: The scope of the variable 'payload' can be reduced. [variableScope]
+  u16_t* payload;
+         ^
+src/apps/tftp/tftp.c:327:11: style: The scope of the variable 'ret' can be reduced. [variableScope]
+      int ret;
+          ^
+src/core/def.c:153:12: style: The scope of the variable 'c2' can be reduced. [variableScope]
+  char c1, c2;
+           ^
+src/core/def.c:188:12: style: The scope of the variable 'c2' can be reduced. [variableScope]
+  char c1, c2;
+           ^
+src/core/dns.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/dns.c:275:0: information: Skipping configuration 'DNS_LOCAL_HOSTLIST;DNS_LOCAL_HOSTLIST_INIT;LWIP_DNS' since the value of 'DNS_LOCAL_HOSTLIST_INIT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  DNS_LOCAL_HOSTLIST_STORAGE_POST = DNS_LOCAL_HOSTLIST_INIT;
+^
+src/core/dns.c:1189:16: style:inconclusive: Function 'dns_recv' argument 1 names different: declaration 's' definition 'arg'. [funcArgNamesDifferent]
+dns_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port)
+               ^
+src/core/dns.c:285:28: note: Function 'dns_recv' argument 1 names different: declaration 's' definition 'arg'.
+static void dns_recv(void *s, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port);
+                           ^
+src/core/dns.c:1189:16: note: Function 'dns_recv' argument 1 names different: declaration 's' definition 'arg'.
+dns_recv(void *arg, struct udp_pcb *pcb, struct pbuf *p, const ip_addr_t *addr, u16_t port)
+               ^
+src/core/dns.c:628:0: information: Skipping configuration 'DNS_LOOKUP_LOCAL_EXTERN;LWIP_DNS' since the value of 'DNS_LOOKUP_LOCAL_EXTERN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (DNS_LOOKUP_LOCAL_EXTERN(name, hostnamelen, addr, LWIP_DNS_ADDRTYPE_ARG_OR_ZERO(dns_addrtype)) == ERR_OK) {
+^
+src/core/dns.c:320:0: information: Skipping configuration 'DNS_SERVER_ADDRESS;LWIP_DNS' since the value of 'DNS_SERVER_ADDRESS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  DNS_SERVER_ADDRESS(&dnsserver);
+^
+src/core/dns.c:1168:0: information: Skipping configuration 'LWIP_DNS;DNS_MAX_TTL' since the value of 'DNS_MAX_TTL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (entry->ttl > DNS_MAX_TTL) {
+^
+src/core/dns.c:1169:0: information: Skipping configuration 'LWIP_DNS;DNS_MAX_TTL' since the value of 'DNS_MAX_TTL' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    entry->ttl = DNS_MAX_TTL;
+^
+src/core/inet_chksum.c:143:17: error: The address of local variable 't' is accessed at non-zero index. [objectIndex]
+    ((u8_t *)&t)[1] = *pb++;
+                ^
+src/core/inet_chksum.c:143:14: note: Address of variable taken here.
+    ((u8_t *)&t)[1] = *pb++;
+             ^
+src/core/inet_chksum.c:143:17: note: The address of local variable 't' is accessed at non-zero index.
+    ((u8_t *)&t)[1] = *pb++;
+                ^
+src/core/init.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 26 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/init.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/core/ipv4/ip4.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/ipv4/ip4.c:220:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip4_route: No route to %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+^
+src/core/ipv4/ip4.c:410:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("ip_input: iphdr->dest 0x%"X32_F" netif->ip_addr 0x%"X32_F" (0x%"X32_F", 0x%"X32_F", 0x%"X32_F")\n",
+^
+src/core/ipv4/ip4.c:426:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG, ("ip4_input: packet accepted on interface %c%c\n",
+^
+src/core/ipv4/ip4.c:481:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_WARNING, ("IP packet dropped due to bad version number %"U16_F"\n", (u16_t)IPH_V(iphdr)));
+^
+src/core/ipv4/ip4.c:510:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv4/ip4.c:514:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv4/ip4.c:519:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv4/ip4.c:641:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE | LWIP_DBG_LEVEL_WARNING, ("ip4_input: packet source is not valid.\n"));
+^
+src/core/ipv4/ip4.c:654:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_TRACE, ("ip4_input: packet not for us.\n"));
+^
+src/core/ipv4/ip4.c:684:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("IP packet dropped since it was fragmented (0x%"X16_F") (while IP_REASSEMBLY == 0).\n",
+^
+src/core/ipv4/ip4.c:702:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("IP packet dropped since there were IP options (while IP_OPTIONS_ALLOWED == 0).\n"));
+^
+src/core/ipv4/ip4.c:713:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("ip4_input: \n"));
+^
+src/core/ipv4/ip4.c:715:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("ip4_input: p->len %"U16_F" p->tot_len %"U16_F"\n", p->len, p->tot_len));
+^
+src/core/ipv4/ip4.c:773:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("Unsupported transport protocol %"U16_F"\n", (u16_t)IPH_PROTO(iphdr)));
+^
+src/core/ipv4/ip4.c:930:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip4_output: not enough room for IP header in pbuf\n"));
+^
+src/core/ipv4/ip4.c:1002:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip4_output: LWIP_IP_HDRINCL but pbuf is too short\n"));
+^
+src/core/ipv4/ip4.c:1014:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("ip4_output_if: %c%c%"U16_F"\n", netif->name[0], netif->name[1], (u16_t)netif->num));
+^
+src/core/ipv4/ip4.c:1040:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("ip4_output_if: call netif->output()\n"));
+^
+src/core/ipv4/ip4.c:1070:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP_DEBUG, ("ip4_output: No route to %"U16_F".%"U16_F".%"U16_F".%"U16_F"\n",
+^
+src/core/ipv4/ip4.c:1131:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("IP header:\n"));
+^
+src/core/ipv4/ip4.c:1132:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:1133:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("|%2"S16_F" |%2"S16_F" |  0x%02"X16_F" |     %5"U16_F"     | (v, hl, tos, len)\n",
+^
+src/core/ipv4/ip4.c:1138:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:1139:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("|    %5"U16_F"      |%"U16_F"%"U16_F"%"U16_F"|    %4"U16_F"   | (id, flags, offset)\n",
+^
+src/core/ipv4/ip4.c:1145:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:1146:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |    0x%04"X16_F"     | (ttl, proto, chksum)\n",
+^
+src/core/ipv4/ip4.c:1150:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:1151:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  | (src)\n",
+^
+src/core/ipv4/ip4.c:1156:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:1157:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("|  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  |  %3"U16_F"  | (dest)\n",
+^
+src/core/ipv4/ip4.c:1162:0: information: Skipping configuration 'IP_DEBUG;LWIP_IPV4' since the value of 'IP_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv4/ip4.c:244:0: information: Skipping configuration 'IP_FORWARD;LWIP_HOOK_IP4_CANFORWARD;LWIP_IPV4' since the value of 'LWIP_HOOK_IP4_CANFORWARD' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  int ret = LWIP_HOOK_IP4_CANFORWARD(p, addr);
+^
+src/core/ipv4/ip4_frag.c:232:28: style: The scope of the variable 'oldest' can be reduced. [variableScope]
+  struct ip_reassdata *r, *oldest, *prev, *oldest_prev;
+                           ^
+src/core/ipv4/ip4_frag.c:232:44: style: The scope of the variable 'oldest_prev' can be reduced. [variableScope]
+  struct ip_reassdata *r, *oldest, *prev, *oldest_prev;
+                                           ^
+src/core/ipv4/ip4_frag.c:745:20: style: Variable 'newpbuflen' is assigned a value that is never used. [unreadVariable]
+  u16_t newpbuflen = 0;
+                   ^
+src/core/ipv4/ip4_frag.c:750:19: style: Variable 'nfb' is assigned a value that is never used. [unreadVariable]
+  const u16_t nfb = (u16_t)((netif->mtu - IP_HLEN) / 8);
+                  ^
+src/core/ipv4/ip4_frag.c:754:14: style: Variable 'poff' is assigned a value that is never used. [unreadVariable]
+  u16_t poff = IP_HLEN;
+             ^
+src/core/ipv6/ip6.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 28 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/ipv6/ip6.c:1295:19: style: The scope of the variable 'ip6hdr' can be reduced. [variableScope]
+  struct ip6_hdr *ip6hdr;
+                  ^
+src/core/ipv6/ip6.c:530:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_WARNING, ("IPv6 packet dropped due to bad version number %"U32_F"\n",
+^
+src/core/ipv6/ip6.c:548:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:553:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:616:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: solicited node packet accepted on interface %c%c\n",
+^
+src/core/ipv6/ip6.c:667:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet accepted on interface %c%c\n",
+^
+src/core/ipv6/ip6.c:676:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with src ANY_ADDRESS dropped\n"));
+^
+src/core/ipv6/ip6.c:685:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_TRACE, ("ip6_input: packet not for us.\n"));
+^
+src/core/ipv6/ip6.c:706:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: \n"));
+^
+src/core/ipv6/ip6.c:708:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: p->len %"U16_F" p->tot_len %"U16_F"\n", p->len, p->tot_len));
+^
+src/core/ipv6/ip6.c:722:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Hop-by-Hop options header\n"));
+^
+src/core/ipv6/ip6.c:734:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:774:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid Hop-by-Hop option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:781:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid Hop-by-Hop option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:790:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid Hop-by-Hop option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:813:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Destination options header\n"));
+^
+src/core/ipv6/ip6.c:823:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:868:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid destination option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:875:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid destination option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:884:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+            LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid destination option type dropped.\n"));
+^
+src/core/ipv6/ip6.c:906:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Routing header\n"));
+^
+src/core/ipv6/ip6.c:917:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:936:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid routing type dropped\n"));
+^
+src/core/ipv6/ip6.c:952:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid routing type dropped\n"));
+^
+src/core/ipv6/ip6.c:965:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Fragment header\n"));
+^
+src/core/ipv6/ip6.c:977:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS,
+^
+src/core/ipv6/ip6.c:993:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with invalid payload length dropped\n"));
+^
+src/core/ipv6/ip6.c:1023:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Fragment header dropped (with LWIP_IPV6_REASS==0)\n"));
+^
+src/core/ipv6/ip6.c:1039:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG, ("ip6_input: packet with Hop-by-Hop options header dropped (only valid as a first option)\n"));
+^
+src/core/ipv6/ip6.c:1101:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip6_input: Unsupported transport protocol %"U16_F"\n", (u16_t)IP6H_NEXTH(ip6hdr)));
+^
+src/core/ipv6/ip6.c:1159:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip6_output: No suitable source address for packet.\n"));
+^
+src/core/ipv6/ip6.c:1201:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(IP6_DEBUG | LWIP_DBG_LEVEL_SERIOUS, ("ip6_output: not enough room for IPv6 header in pbuf\n"));
+^
+src/core/ipv6/ip6.c:1235:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("ip6_output_if: %c%c%"U16_F"\n", netif->name[0], netif->name[1], (u16_t)netif->num));
+^
+src/core/ipv6/ip6.c:1268:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("netif->output_ip6()\n"));
+^
+src/core/ipv6/ip6.c:1312:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(IP6_DEBUG, ("ip6_output: no route for %"X16_F":%"X16_F":%"X16_F":%"X16_F":%"X16_F":%"X16_F":%"X16_F":%"X16_F"\n",
+^
+src/core/ipv6/ip6.c:1457:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("IPv6 header:\n"));
+^
+src/core/ipv6/ip6.c:1458:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv6/ip6.c:1459:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("| %2"U16_F" |  %3"U16_F"  |      %7"U32_F"     | (ver, class, flow)\n",
+^
+src/core/ipv6/ip6.c:1463:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv6/ip6.c:1464:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("|     %5"U16_F"     |  %3"U16_F"  |  %3"U16_F"  | (plen, nexth, hopl)\n",
+^
+src/core/ipv6/ip6.c:1468:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv6/ip6.c:1469:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("|  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |  %4"X32_F" | (src)\n",
+^
+src/core/ipv6/ip6.c:1474:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("|  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |\n",
+^
+src/core/ipv6/ip6.c:1479:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv6/ip6.c:1480:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("|  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |  %4"X32_F" | (dest)\n",
+^
+src/core/ipv6/ip6.c:1485:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("|  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |  %4"X32_F" |\n",
+^
+src/core/ipv6/ip6.c:1490:0: information: Skipping configuration 'IP6_DEBUG;LWIP_IPV6' since the value of 'IP6_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_DEBUGF(IP6_DEBUG, ("+-------------------------------+\n"));
+^
+src/core/ipv6/ip6.c:64:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/ipv6/ip6.c:539:0: information: Skipping configuration 'LWIP_HOOK_IP6_INPUT;LWIP_IPV6' since the value of 'LWIP_HOOK_IP6_INPUT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if (LWIP_HOOK_IP6_INPUT(p, inp)) {
+^
+src/core/ipv6/ip6.c:184:0: information: Skipping configuration 'LWIP_HOOK_IP6_ROUTE;LWIP_IPV6' since the value of 'LWIP_HOOK_IP6_ROUTE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  netif = LWIP_HOOK_IP6_ROUTE(src, dest);
+^
+src/core/ipv6/nd6.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 17 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/ipv6/nd6.c:1771:17: style: The scope of the variable 'netif' can be reduced. [variableScope]
+  struct netif *netif;
+                ^
+src/core/ipv6/nd6.c:69:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/ipv6/nd6.c:2011:0: information: Skipping configuration 'LWIP_HOOK_ND6_GET_GW;LWIP_IPV6' since the value of 'LWIP_HOOK_ND6_GET_GW' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      } else if ((next_hop_addr = LWIP_HOOK_ND6_GET_GW(netif, ip6addr)) != NULL) {
+^
+src/core/ipv6/nd6.c:2193:23: style: The scope of the variable 'r' can be reduced. [variableScope]
+  struct nd6_q_entry *r;
+                      ^
+src/core/memp.c:343:76: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("memp_malloc: type < MEMP_MAX", (type < MEMP_MAX), return NULL;);
+                                                                           ^
+src/core/memp.c:87:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/memp.c:444:0: information: Skipping configuration 'LWIP_HOOK_MEMP_AVAILABLE' since the value of 'LWIP_HOOK_MEMP_AVAILABLE' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_HOOK_MEMP_AVAILABLE(type);
+^
+src/core/netif.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 45 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/netif.c:875:3: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_ERROR is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("netif_set_up: invalid netif", netif != NULL, return);
+  ^
+src/core/netif.c:525:3: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_ERROR is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("netif_set_ipaddr: invalid netif", netif != NULL, return);
+  ^
+src/core/netif.c:1158:0: information: Skipping configuration 'ENABLE_LOOPBACK;LWIP_LOOPBACK_MAX_PBUFS' since the value of 'LWIP_LOOPBACK_MAX_PBUFS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      ((netif->loop_cnt_current + clen) > LWIP_MIN(LWIP_LOOPBACK_MAX_PBUFS, 0xFFFF))) {
+^
+src/core/pbuf.c:600:88: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("increment_magnitude <= p->len", (increment_magnitude <= p->len), return 1;);
+                                                                                       ^
+src/core/raw.c:167:27: error: Uninitialized variable: proto [uninitvar]
+    if ((pcb->protocol == proto) && raw_input_local_match(pcb, broadcast) &&
+                          ^
+src/core/raw.c:138:9: style: Variable 'proto' is not assigned a value. [unassignedVariable]
+  s16_t proto;
+        ^
+src/core/tcp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 22 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/tcp.c:858:88: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("tcp_listen_with_backlog_and_err: invalid pcb", pcb != NULL, res = ERR_ARG; goto done);
+                                                                                       ^
+src/core/tcp.c:118:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/tcp.c:2228:0: information: Skipping configuration 'LWIP_HOOK_TCP_ISN;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_ISN' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return LWIP_HOOK_TCP_ISN(&pcb->local_ip, pcb->local_port, &pcb->remote_ip, pcb->remote_port);
+^
+src/core/tcp.c:204:0: information: Skipping configuration 'LWIP_RAND;LWIP_TCP' since the value of 'LWIP_RAND' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  tcp_port = TCP_ENSURE_LOCAL_PORT_RANGE(LWIP_RAND());
+^
+src/core/tcp.c:2590:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("Increase LWIP_TCP_PCB_NUM_EXT_ARGS in lwipopts.h", result < LWIP_TCP_PCB_NUM_EXT_ARGS);
+^
+src/core/tcp.c:2606:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("id < LWIP_TCP_PCB_NUM_EXT_ARGS", id < LWIP_TCP_PCB_NUM_EXT_ARGS);
+^
+src/core/tcp.c:2625:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("id < LWIP_TCP_PCB_NUM_EXT_ARGS", id < LWIP_TCP_PCB_NUM_EXT_ARGS);
+^
+src/core/tcp.c:2643:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("id < LWIP_TCP_PCB_NUM_EXT_ARGS", id < LWIP_TCP_PCB_NUM_EXT_ARGS);
+^
+src/core/tcp.c:2659:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  for (i = 0; i < LWIP_TCP_PCB_NUM_EXT_ARGS; i++) {
+^
+src/core/tcp.c:2681:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_PCB_NUM_EXT_ARGS' since the value of 'LWIP_TCP_PCB_NUM_EXT_ARGS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  for (i = 0; i < LWIP_TCP_PCB_NUM_EXT_ARGS; i++) {
+^
+src/core/tcp_in.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 26 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/tcp_in.c:1104:19: style: The scope of the variable 'next' can be reduced. [variableScope]
+  struct tcp_seg *next;
+                  ^
+src/core/tcp_in.c:65:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/tcp_in.c:304:0: information: Skipping configuration 'LWIP_HOOK_TCP_INPACKET_PCB;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_INPACKET_PCB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        if (LWIP_HOOK_TCP_INPACKET_PCB(pcb, tcphdr, tcphdr_optlen, tcphdr_opt1len,
+^
+src/core/tcp_in.c:376:0: information: Skipping configuration 'LWIP_HOOK_TCP_INPACKET_PCB;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_INPACKET_PCB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      if (LWIP_HOOK_TCP_INPACKET_PCB((struct tcp_pcb *)lpcb, tcphdr, tcphdr_optlen,
+^
+src/core/tcp_in.c:395:0: information: Skipping configuration 'LWIP_HOOK_TCP_INPACKET_PCB;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_INPACKET_PCB' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  if ((pcb != NULL) && LWIP_HOOK_TCP_INPACKET_PCB(pcb, tcphdr, tcphdr_optlen,
+^
+src/core/tcp_in.c:1830:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_SACK_OUT;TCP_OOSEQ_BYTES_LIMIT;TCP_OOSEQ_PBUFS_LIMIT;TCP_QUEUE_OOSEQ' since the value of 'TCP_OOSEQ_BYTES_LIMIT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          const u32_t ooseq_max_blen = TCP_OOSEQ_BYTES_LIMIT(pcb);
+^
+src/core/tcp_in.c:1834:0: information: Skipping configuration 'LWIP_TCP;LWIP_TCP_SACK_OUT;TCP_OOSEQ_BYTES_LIMIT;TCP_OOSEQ_PBUFS_LIMIT;TCP_QUEUE_OOSEQ' since the value of 'TCP_OOSEQ_PBUFS_LIMIT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+          const u16_t ooseq_max_qlen = TCP_OOSEQ_PBUFS_LIMIT(pcb);
+^
+src/core/tcp_in.c:1066:19: style: The scope of the variable 'old_seg' can be reduced. [variableScope]
+  struct tcp_seg *old_seg;
+                  ^
+src/core/tcp_out.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 21 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/tcp_out.c:433:41: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+             arg != NULL, return ERR_ARG;);
+                                        ^
+src/core/tcp_out.c:84:0: error: No header in #include [preprocessorErrorDirective]
+#include LWIP_HOOK_FILENAME
+^
+src/core/tcp_out.c:1566:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_ADD_TCPOPTS;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_ADD_TCPOPTS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  opts = LWIP_HOOK_TCP_OUT_ADD_TCPOPTS(seg->p, seg->tcphdr, pcb, opts);
+^
+src/core/tcp_out.c:1908:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_ADD_TCPOPTS;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_ADD_TCPOPTS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  opts = LWIP_HOOK_TCP_OUT_ADD_TCPOPTS(p, tcphdr, pcb, opts);
+^
+src/core/tcp_out.c:169:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(optflags, pcb);
+^
+src/core/tcp_out.c:452:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(0, pcb);
+^
+src/core/tcp_out.c:488:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    unsent_optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(last_unsent->flags, pcb);
+^
+src/core/tcp_out.c:1077:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(optflags, pcb);
+^
+src/core/tcp_out.c:1568:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("options not filled", (u8_t *)opts == ((u8_t *)(seg->tcphdr + 1)) + LWIP_TCP_OPT_LENGTH_SEGMENT(seg->flags, pcb));
+^
+src/core/tcp_out.c:1913:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  LWIP_ASSERT("options not filled", (u8_t *)opts == ((u8_t *)(tcphdr + 1)) + sacks_len * 4 + LWIP_TCP_OPT_LENGTH_SEGMENT(optflags, pcb));
+^
+src/core/tcp_out.c:1991:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(0, pcb);
+^
+src/core/tcp_out.c:2100:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(optflags, pcb);
+^
+src/core/tcp_out.c:2149:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  u8_t optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(0, pcb);
+^
+src/core/tcp_out.c:2192:0: information: Skipping configuration 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH;LWIP_TCP' since the value of 'LWIP_HOOK_TCP_OUT_TCPOPT_LENGTH' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  u8_t optlen = LWIP_TCP_OPT_LENGTH_SEGMENT(0, pcb);
+^
+src/core/timeouts.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 19 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/udp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/core/udp.c:1134:3: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_ERROR is a macro then please configure it. [unknownMacro]
+  LWIP_ERROR("udp_disconnect: invalid pcb", pcb != NULL, return);
+  ^
+src/netif/bridgeif.c:148:11: style: Condition '!br->fdbs[i].used' is always true [knownConditionTrueFalse]
+      if (!br->fdbs[i].used) {
+          ^
+src/netif/bridgeif.c:146:9: note: Assuming that condition '!br->fdbs[i].used' is not redundant
+    if (!br->fdbs[i].used) {
+        ^
+src/netif/bridgeif.c:148:11: note: Condition '!br->fdbs[i].used' is always true
+      if (!br->fdbs[i].used) {
+          ^
+src/netif/ethernet.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 14 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/lowpan6.c:540:96: error: There is an unknown macro here somewhere. Configuration is required. If ; is a macro then please configure it. [unknownMacro]
+    LWIP_ERROR("NETIF_MAX_HWADDR_LEN >= 8 required", sizeof(netif->hwaddr) >= 8, return ERR_VAL;);
+                                                                                               ^
+src/netif/lowpan6_ble.c:232:16: style: Unused variable: p_frag [unusedVariable]
+  struct pbuf *p_frag;
+               ^
+src/netif/lowpan6_ble.c:233:9: style: Unused variable: remaining_len [unusedVariable]
+  u16_t remaining_len;
+        ^
+src/netif/lowpan6_ble.c:234:9: style: Unused variable: buffer [unusedVariable]
+  u8_t *buffer;
+        ^
+src/netif/lowpan6_ble.c:235:8: style: Unused variable: lowpan6_header_len [unusedVariable]
+  u8_t lowpan6_header_len;
+       ^
+src/netif/lowpan6_ble.c:236:8: style: Unused variable: hidden_header_len [unusedVariable]
+  u8_t hidden_header_len;
+       ^
+src/netif/lowpan6_ble.c:237:9: style: Unused variable: err [unusedVariable]
+  err_t err;
+        ^
+src/netif/lowpan6_ble.c:384:0: information: Skipping configuration 'LWIP_IPV6;LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' since the value of 'LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG, ("IPv6 payload:\n"));
+^
+src/netif/lowpan6_ble.c:387:0: information: Skipping configuration 'LWIP_IPV6;LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' since the value of 'LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG, ("\n"));
+^
+src/netif/lowpan6_ble.c:389:0: information: Skipping configuration 'LWIP_IPV6;LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' since the value of 'LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG, ("%2X ", *((u8_t *)p->payload+i)));
+^
+src/netif/lowpan6_ble.c:391:0: information: Skipping configuration 'LWIP_IPV6;LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' since the value of 'LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(LWIP_RFC7668_IP_UNCOMPRESSED_DEBUG, ("\np->len: %d\n", p->len));
+^
+src/netif/lowpan6_common.c:315:9: style: Variable 'inptr' is assigned a value that is never used. [unreadVariable]
+  inptr += IP6_HLEN;
+        ^
+src/netif/lowpan6_common.c:420:0: information: Skipping configuration 'LWIP_6LOWPAN_IPHC;LWIP_IPV6;LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' since the value of 'LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("lowpan6_decompress_hdr: IP6 payload (compressed): \n"));
+^
+src/netif/lowpan6_common.c:423:0: information: Skipping configuration 'LWIP_6LOWPAN_IPHC;LWIP_IPV6;LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' since the value of 'LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+        LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("\n"));
+^
+src/netif/lowpan6_common.c:425:0: information: Skipping configuration 'LWIP_6LOWPAN_IPHC;LWIP_IPV6;LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' since the value of 'LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+      LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("%2X ", lowpan6_buffer[j]));
+^
+src/netif/lowpan6_common.c:427:0: information: Skipping configuration 'LWIP_6LOWPAN_IPHC;LWIP_IPV6;LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' since the value of 'LWIP_LOWPAN6_IP_COMPRESSED_DEBUG' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    LWIP_DEBUGF(LWIP_LOWPAN6_IP_COMPRESSED_DEBUG, ("\np->len: %d", lowpan6_bufsize));
+^
+src/netif/ppp/auth.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 37 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/ppp/auth.c:862:14: style: Local variable 'pcb' shadows outer argument [shadowArgument]
+    ppp_pcb *pcb = &ppp_pcb_list[unit];
+             ^
+src/netif/ppp/auth.c:860:36: note: Shadowed declaration
+static void network_phase(ppp_pcb *pcb) {
+                                   ^
+src/netif/ppp/auth.c:862:14: note: Shadow variable
+    ppp_pcb *pcb = &ppp_pcb_list[unit];
+             ^
+src/netif/ppp/auth.c:1007:10: style: The scope of the variable 'secretuserlen' can be reduced. [variableScope]
+  size_t secretuserlen;
+         ^
+src/netif/ppp/auth.c:1008:10: style: The scope of the variable 'secretpasswdlen' can be reduced. [variableScope]
+  size_t secretpasswdlen;
+         ^
+src/netif/ppp/auth.c:1450:9: style: Condition '!can_auth' is always true [knownConditionTrueFalse]
+    if (!can_auth && (0
+        ^
+src/netif/ppp/auth.c:1448:16: note: Assignment 'can_auth=0', assigned value is 0
+    can_auth = 0;
+               ^
+src/netif/ppp/auth.c:1450:9: note: Condition '!can_auth' is always true
+    if (!can_auth && (0
+        ^
+src/netif/ppp/ccp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 20 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/ppp/fsm.c:393:15: style: The scope of the variable 'reject_if_disagree' can be reduced. [variableScope]
+    int code, reject_if_disagree;
+              ^
+src/netif/ppp/fsm.c:517:9: style: The scope of the variable 'treat_as_reject' can be reduced. [variableScope]
+    int treat_as_reject;
+        ^
+src/netif/ppp/ipcp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/ppp/lcp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 42 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/ppp/magic.c:121:0: information: Skipping configuration 'LWIP_RAND;PPP_MD5_RANDM;PPP_SUPPORT' since the value of 'LWIP_RAND' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    sys_data.rand = LWIP_RAND();
+^
+src/netif/ppp/magic.c:257:0: information: Skipping configuration 'LWIP_RAND;PPP_SUPPORT' since the value of 'LWIP_RAND' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  return (LWIP_RAND() << 16) + LWIP_RAND() + magic_randomseed;
+^
+src/netif/ppp/ppp.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 40 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+src/netif/ppp/ppp.c:155:1: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_MEMPOOL_DECLARE is a macro then please configure it. [unknownMacro]
+LWIP_MEMPOOL_DECLARE(PPP_PCB, MEMP_NUM_PPP_PCB, sizeof(ppp_pcb), "PPP_PCB")
+^
+src/netif/ppp/pppapi.c:45:1: error: There is an unknown macro here somewhere. Configuration is required. If LWIP_MEMPOOL_DECLARE is a macro then please configure it. [unknownMacro]
+LWIP_MEMPOOL_DECLARE(PPPAPI_MSG, MEMP_NUM_PPP_API_MSG, sizeof(struct pppapi_msg), "PPPAPI_MSG")
+^
+src/netif/ppp/utils.c:573:9: style: The scope of the variable 'c' can be reduced. [variableScope]
+    int c;
+        ^
+src/netif/ppp/utils.c:448:9: style: The scope of the variable 'i' can be reduced. [variableScope]
+    int i, n;
+        ^
+src/netif/ppp/utils.c:448:12: style: The scope of the variable 'n' can be reduced. [variableScope]
+    int i, n;
+           ^
+src/netif/ppp/utils.c:450:27: style: The scope of the variable 'protp' can be reduced. [variableScope]
+    const struct protent *protp;
+                          ^
+src/netif/slipif.c:210:16: style: The scope of the variable 't' can be reduced. [variableScope]
+  struct pbuf *t;
+               ^
+test/unit/api/test_sockets.c:385:22: style: Condition 'rcv_trailer' is always false [knownConditionTrueFalse]
+  rmsg.msg_iovlen = (rcv_trailer ? 5 : 4);
+                     ^
+test/unit/api/test_sockets.c:295:24: note: Assignment 'rcv_trailer=0', assigned value is 0
+  int    rcv_trailer = 0;
+                       ^
+test/unit/api/test_sockets.c:385:22: note: Condition 'rcv_trailer' is always false
+  rmsg.msg_iovlen = (rcv_trailer ? 5 : 4);
+                     ^
+test/unit/api/test_sockets.c:446:10: style: The scope of the variable 'ret' can be reduced. [variableScope]
+  int i, ret;
+         ^
+test/unit/core/test_mem.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/core/test_pbuf.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/etharp/test_etharp.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/ip4/test_ip4.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/ip6/test_ip6.c:238:9: style: The scope of the variable 'str' can be reduced. [variableScope]
+  char *str;
+        ^
+test/unit/tcp/tcp_helper.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/tcp/test_tcp.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/tcp/test_tcp_oos.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+test/unit/udp/test_udp.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+src/apps/http/altcp_proxyconnect.c:105:19: error: Null pointer dereference: buffer [ctunullpointer]
+  return snprintf(buffer, bufsize, PROXY_CONNECT_FORMAT(host, port));
+                  ^
+src/apps/http/altcp_proxyconnect.c:121:42: note: Calling function altcp_proxyconnect_format_request, 1st argument is null
+  len = altcp_proxyconnect_format_request(NULL, 0, "", state->outer_port);
+                                         ^
+src/apps/http/altcp_proxyconnect.c:105:19: note: Dereferencing argument buffer that is null
+  return snprintf(buffer, bufsize, PROXY_CONNECT_FORMAT(host, port));
+                  ^
+src/core/altcp.c:654:0: style: The function 'altcp_default_dealloc' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:689:0: style: The function 'altcp_default_keepalive_disable' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:697:0: style: The function 'altcp_default_keepalive_enable' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:544:0: style: The function 'altcp_default_recved' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:536:0: style: The function 'altcp_default_set_poll' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:576:0: style: The function 'altcp_default_write' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:329:0: style: The function 'altcp_listen_with_backlog_and_err' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:174:0: style: The function 'altcp_new' is never used. [unusedFunction]
+
+^
+src/core/altcp.c:164:0: style: The function 'altcp_new_ip6' is never used. [unusedFunction]
+
+^
+src/apps/http/altcp_proxyconnect.c:397:0: style: The function 'altcp_proxyconnect_alloc' is never used. [unusedFunction]
+
+^
+src/apps/http/altcp_proxyconnect.c:416:0: style: The function 'altcp_proxyconnect_tls_alloc' is never used. [unusedFunction]
+
+^
+src/core/altcp_tcp.c:218:0: style: The function 'altcp_tcp_alloc' is never used. [unusedFunction]
+
+^
+src/core/altcp_tcp.c:225:0: style: The function 'altcp_tcp_wrap' is never used. [unusedFunction]
+
+^
+src/core/altcp_alloc.c:80:0: style: The function 'altcp_tls_alloc' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1372:0: style: The function 'auth_check_options' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1006:0: style: The function 'auth_check_passwd' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1031:0: style: The function 'auth_peer_fail' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1046:0: style: The function 'auth_peer_success' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1118:0: style: The function 'auth_withpeer_fail' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1137:0: style: The function 'auth_withpeer_success' is never used. [unusedFunction]
+
+^
+src/netif/bridgeif.c:524:0: style: The function 'bridgeif_add_port' is never used. [unusedFunction]
+
+^
+src/netif/bridgeif.c:135:0: style: The function 'bridgeif_fdb_add' is never used. [unusedFunction]
+
+^
+src/netif/bridgeif.c:168:0: style: The function 'bridgeif_fdb_remove' is never used. [unusedFunction]
+
+^
+src/netif/bridgeif.c:413:0: style: The function 'bridgeif_init' is never used. [unusedFunction]
+
+^
+src/core/dns.c:1156:0: style: The function 'dns_correct_response' is never used. [unusedFunction]
+
+^
+src/core/dns.c:1549:0: style: The function 'dns_gethostbyname' is never used. [unusedFunction]
+
+^
+src/core/dns.c:315:0: style: The function 'dns_init' is never used. [unusedFunction]
+
+^
+src/core/dns.c:577:0: style: The function 'dns_local_addhost' is never used. [unusedFunction]
+
+^
+src/core/dns.c:440:0: style: The function 'dns_local_iterate' is never used. [unusedFunction]
+
+^
+src/core/dns.c:477:0: style: The function 'dns_local_lookup' is never used. [unusedFunction]
+
+^
+src/core/dns.c:541:0: style: The function 'dns_local_removehost' is never used. [unusedFunction]
+
+^
+src/api/err.c:69:0: style: The function 'err_to_errno' is never used. [unusedFunction]
+
+^
+doc/NO_SYS_SampleCode.c:2:0: style: The function 'eth_mac_irq' is never used. [unusedFunction]
+
+^
+doc/ZeroCopyRx.c:25:0: style: The function 'eth_rx_irq' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:139:0: style: The function 'eui64_to_ble_addr' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:158:0: style: The function 'fs_bytes_left' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:83:0: style: The function 'fs_close' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:137:0: style: The function 'fs_is_file_ready' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:43:0: style: The function 'fs_open' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:102:0: style: The function 'fs_read' is never used. [unusedFunction]
+
+^
+src/apps/http/fs.c:99:0: style: The function 'fs_read_async' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1906:0: style: The function 'get_secret' is never used. [unusedFunction]
+
+^
+src/core/inet_chksum.c:568:0: style: The function 'inet_chksum_pbuf' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4_addr.c:58:0: style: The function 'ip4_addr_isbroadcast_u32' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4_addr.c:93:0: style: The function 'ip4_addr_netmask_valid' is never used. [unusedFunction]
+
+^
+contrib/Coverity/coverity.c:60:0: style: The function 'ip4_input' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4.c:1062:0: style: The function 'ip4_output' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4_frag.c:503:0: style: The function 'ip4_reass' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4.c:152:0: style: The function 'ip4_route' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4.c:117:0: style: The function 'ip4_set_default_multicast_netif' is never used. [unusedFunction]
+
+^
+contrib/addons/ipv6_static_routing/ip6_route_table.c:76:0: style: The function 'ip6_add_route_entry' is never used. [unusedFunction]
+
+^
+contrib/addons/ipv6_static_routing/ip6_route_table.c:220:0: style: The function 'ip6_get_gateway' is never used. [unusedFunction]
+
+^
+contrib/addons/ipv6_static_routing/ip6_route_table.c:243:0: style: The function 'ip6_get_route_table' is never used. [unusedFunction]
+
+^
+src/core/ipv6/ip6.c:1291:0: style: The function 'ip6_output' is never used. [unusedFunction]
+
+^
+contrib/addons/ipv6_static_routing/ip6_route_table.c:130:0: style: The function 'ip6_remove_route_entry' is never used. [unusedFunction]
+
+^
+contrib/addons/ipv6_static_routing/ip6_route_table.c:195:0: style: The function 'ip6_static_route' is never used. [unusedFunction]
+
+^
+src/core/ipv6/ip6_addr.c:218:0: style: The function 'ip6addr_ntoa' is never used. [unusedFunction]
+
+^
+src/core/inet_chksum.c:526:0: style: The function 'ip_chksum_pseudo_partial' is never used. [unusedFunction]
+
+^
+src/core/ipv4/ip4_addr.c:123:0: style: The function 'ipaddr_addr' is never used. [unusedFunction]
+
+^
+src/netif/ppp/lcp.c:632:0: style: The function 'lcp_sprotrej' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:109:0: style: The function 'list_delete' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:103:0: style: The function 'list_elems' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:97:0: style: The function 'list_first' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:144:0: style: The function 'list_map' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:41:0: style: The function 'list_new' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:52:0: style: The function 'list_push' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/list.c:116:0: style: The function 'list_remove' is never used. [unusedFunction]
+
+^
+contrib/addons/netconn/external_resolve/dnssd.c:84:0: style: The function 'lwip_dnssd_gethostbyname' is never used. [unusedFunction]
+
+^
+contrib/examples/example_app/test.c:768:0: style: The function 'lwip_example_app_platform_assert' is never used. [unusedFunction]
+
+^
+test/fuzz/fuzz_common.c:676:0: style: The function 'lwip_fuzz_rand' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_isn/tcp_isn.c:119:0: style: The function 'lwip_hook_tcp_isn' is never used. [unusedFunction]
+
+^
+src/api/if_api.c:61:0: style: The function 'lwip_if_indextoname' is never used. [unusedFunction]
+
+^
+src/api/if_api.c:86:0: style: The function 'lwip_if_nametoindex' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_isn/tcp_isn.c:98:0: style: The function 'lwip_init_tcp_isn' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:75:0: style: The function 'lwip_port_rand' is never used. [unusedFunction]
+
+^
+src/core/def.c:128:0: style: The function 'lwip_strnistr' is never used. [unusedFunction]
+
+^
+src/core/def.c:105:0: style: The function 'lwip_strnstr' is never used. [unusedFunction]
+
+^
+test/unit/lwip_unittests.c:67:0: style: The function 'lwip_unittests_run' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:763:0: style: The function 'lwip_unix_keypressed' is never used. [unusedFunction]
+
+^
+contrib/ports/win32/sys_arch.c:747:0: style: The function 'lwip_win32_keypressed' is never used. [unusedFunction]
+
+^
+contrib/examples/lwiperf/lwiperf_example.c:47:0: style: The function 'lwiperf_example_init' is never used. [unusedFunction]
+
+^
+src/netif/ppp/magic.c:282:0: style: The function 'magic_pow' is never used. [unusedFunction]
+
+^
+src/netif/ppp/magic.c:140:0: style: The function 'magic_randomize' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_domain.c:175:0: style: The function 'mdns_domain_add_string' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_domain.c:281:0: style: The function 'mdns_domain_debug_print' is never used. [unusedFunction]
+
+^
+contrib/examples/mdns/mdns_example.c:54:0: style: The function 'mdns_example_init' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_out.c:877:0: style: The function 'mdns_send_multicast_msg_delayed_ipv4' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_out.c:1014:0: style: The function 'mdns_send_multicast_msg_delayed_ipv6' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_out.c:1143:0: style: The function 'mdns_send_request' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_out.c:901:0: style: The function 'mdns_send_unicast_msg_delayed_ipv4' is never used. [unusedFunction]
+
+^
+src/apps/mdns/mdns_out.c:1038:0: style: The function 'mdns_send_unicast_msg_delayed_ipv6' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:701:0: style: The function 'mem_free_callback' is never used. [unusedFunction]
+
+^
+src/core/mem.c:516:0: style: The function 'mem_init' is never used. [unusedFunction]
+
+^
+src/core/mem.c:699:0: style: The function 'mem_trim' is never used. [unusedFunction]
+
+^
+contrib/examples/mqtt/mqtt_example.c:113:0: style: The function 'mqtt_example_init' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:2439:0: style: The function 'nd6_adjust_mld_membership' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:2402:0: style: The function 'nd6_cleanup_netif' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:2326:0: style: The function 'nd6_get_destination_mtu' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:2285:0: style: The function 'nd6_get_next_hop_addr_or_queue' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:302:0: style: The function 'nd6_input' is never used. [unusedFunction]
+
+^
+src/core/ipv6/nd6.c:2466:0: style: The function 'nd6_restart_netif' is never used. [unusedFunction]
+
+^
+src/api/netifapi.c:222:0: style: The function 'netifapi_netif_add' is never used. [unusedFunction]
+
+^
+src/api/netifapi.c:303:0: style: The function 'netifapi_netif_common' is never used. [unusedFunction]
+
+^
+src/api/netifapi.c:267:0: style: The function 'netifapi_netif_set_addr' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1251:0: style: The function 'np_down' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1270:0: style: The function 'np_finished' is never used. [unusedFunction]
+
+^
+src/netif/ppp/auth.c:1200:0: style: The function 'np_up' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:688:0: style: The function 'pbuf_free_callback' is never used. [unusedFunction]
+
+^
+contrib/ports/win32/pcapif_helper.c:87:0: style: The function 'pcapifh_alloc_readonly_copy' is never used. [unusedFunction]
+
+^
+contrib/ports/win32/pcapif_helper.c:109:0: style: The function 'pcapifh_free_readonly_mem' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/perf.c:61:0: style: The function 'perf_init' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/perf.c:40:0: style: The function 'perf_print' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/perf.c:54:0: style: The function 'perf_print_times' is never used. [unusedFunction]
+
+^
+contrib/apps/ping/ping.c:385:0: style: The function 'ping_init' is never used. [unusedFunction]
+
+^
+contrib/apps/ping/ping.c:376:0: style: The function 'ping_send_now' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:692:0: style: The function 'ppp_dbglog_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:705:0: style: The function 'ppp_dump_packet' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:645:0: style: The function 'ppp_error_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:632:0: style: The function 'ppp_fatal_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:681:0: style: The function 'ppp_info_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:670:0: style: The function 'ppp_notice_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:105:0: style: The function 'ppp_strlcat' is never used. [unusedFunction]
+
+^
+src/netif/ppp/utils.c:659:0: style: The function 'ppp_warn_impl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:350:0: style: The function 'pppapi_close' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:285:0: style: The function 'pppapi_connect' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:382:0: style: The function 'pppapi_free' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:413:0: style: The function 'pppapi_ioctl' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:318:0: style: The function 'pppapi_listen' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:184:0: style: The function 'pppapi_pppoe_create' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:236:0: style: The function 'pppapi_pppol2tp_create' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:142:0: style: The function 'pppapi_pppos_create' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:73:0: style: The function 'pppapi_set_default' is never used. [unusedFunction]
+
+^
+src/netif/ppp/pppapi.c:106:0: style: The function 'pppapi_set_notify_phase_callback' is never used. [unusedFunction]
+
+^
+contrib/examples/ppp/pppos_example.c:188:0: style: The function 'pppos_example_init' is never used. [unusedFunction]
+
+^
+src/core/raw.c:253:0: style: The function 'raw_bind_netif' is never used. [unusedFunction]
+
+^
+src/core/raw.c:278:0: style: The function 'raw_connect' is never used. [unusedFunction]
+
+^
+src/core/raw.c:304:0: style: The function 'raw_disconnect' is never used. [unusedFunction]
+
+^
+src/core/raw.c:135:0: style: The function 'raw_input' is never used. [unusedFunction]
+
+^
+src/core/raw.c:655:0: style: The function 'raw_netif_ip_addr_changed' is never used. [unusedFunction]
+
+^
+src/core/raw.c:634:0: style: The function 'raw_new_ip_type' is never used. [unusedFunction]
+
+^
+src/core/raw.c:561:0: style: The function 'raw_remove' is never used. [unusedFunction]
+
+^
+src/core/raw.c:546:0: style: The function 'raw_send' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:410:0: style: The function 'rfc7668_if_init' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:300:0: style: The function 'rfc7668_set_context' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:176:0: style: The function 'rfc7668_set_local_addr_eui64' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:187:0: style: The function 'rfc7668_set_local_addr_mac48' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:198:0: style: The function 'rfc7668_set_peer_addr_eui64' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:209:0: style: The function 'rfc7668_set_peer_addr_mac48' is never used. [unusedFunction]
+
+^
+src/apps/http/makefsdata/makefsdata.c:1293:0: style: The function 's_put_ascii' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:456:0: style: The function 'sio_change_baud' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:273:0: style: The function 'sio_expect_string' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:250:0: style: The function 'sio_flush' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:266:0: style: The function 'sio_poll' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:315:0: style: The function 'sio_read_abort' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:260:0: style: The function 'sio_recv' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:237:0: style: The function 'sio_send_string' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/sio.c:303:0: style: The function 'sio_write' is never used. [unusedFunction]
+
+^
+src/netif/slipif.c:360:0: style: The function 'slipif_init' is never used. [unusedFunction]
+
+^
+src/netif/slipif.c:426:0: style: The function 'slipif_poll' is never used. [unusedFunction]
+
+^
+src/netif/slipif.c:449:0: style: The function 'slipif_process_rxqueue' is never used. [unusedFunction]
+
+^
+src/netif/slipif.c:528:0: style: The function 'slipif_received_byte' is never used. [unusedFunction]
+
+^
+src/netif/slipif.c:547:0: style: The function 'slipif_received_bytes' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:504:0: style: The function 'snmp_coldstart_trap' is never used. [unusedFunction]
+
+^
+contrib/examples/snmp/snmp_example.c:52:0: style: The function 'snmp_example_init' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:189:0: style: The function 'snmp_get_auth_traps_enabled' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:167:0: style: The function 'snmp_get_community' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:205:0: style: The function 'snmp_get_community_trap' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:194:0: style: The function 'snmp_get_community_write' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:221:0: style: The function 'snmp_get_default_trap_version' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:286:0: style: The function 'snmp_receive' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_scalar.c:86:0: style: The function 'snmp_scalar_array_get_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_scalar.c:121:0: style: The function 'snmp_scalar_array_get_next_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_scalar.c:71:0: style: The function 'snmp_scalar_get_next_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:861:0: style: The function 'snmp_send_inform_specific' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:449:0: style: The function 'snmp_send_trap' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:490:0: style: The function 'snmp_send_trap_specific' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:177:0: style: The function 'snmp_set_auth_traps_enabled' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:181:0: style: The function 'snmp_set_community' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:236:0: style: The function 'snmp_set_community_trap' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:219:0: style: The function 'snmp_set_community_write' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_traps.c:206:0: style: The function 'snmp_set_default_trap_version' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:260:0: style: The function 'snmp_set_inform_callback' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:248:0: style: The function 'snmp_set_write_callback' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_table.c:46:0: style: The function 'snmp_table_get_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_table.c:88:0: style: The function 'snmp_table_get_next_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_table.c:164:0: style: The function 'snmp_table_simple_get_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_table.c:227:0: style: The function 'snmp_table_simple_get_next_instance' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:142:0: style: The function 'snmp_v1_enable' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:106:0: style: The function 'snmp_v1_enabled' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:148:0: style: The function 'snmp_v2c_enable' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:112:0: style: The function 'snmp_v2c_enabled' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:154:0: style: The function 'snmp_v3_enable' is never used. [unusedFunction]
+
+^
+src/apps/snmp/snmp_msg.c:118:0: style: The function 'snmp_v3_enabled' is never used. [unusedFunction]
+
+^
+contrib/examples/sntp/sntp_example.c:55:0: style: The function 'sntp_example_init' is never used. [unusedFunction]
+
+^
+contrib/examples/sntp/sntp_example.c:38:0: style: The function 'sntp_set_system_time' is never used. [unusedFunction]
+
+^
+src/core/stats.c:143:0: style: The function 'stats_display' is never used. [unusedFunction]
+
+^
+src/core/stats.c:116:0: style: The function 'stats_display_memp' is never used. [unusedFunction]
+
+^
+src/core/stats.c:64:0: style: The function 'stats_display_proto' is never used. [unusedFunction]
+
+^
+src/core/stats.c:127:0: style: The function 'stats_display_sys' is never used. [unusedFunction]
+
+^
+src/core/stats.c:53:0: style: The function 'stats_init' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:410:0: style: The function 'sys_arch_mbox_fetch' is never used. [unusedFunction]
+
+^
+contrib/ports/win32/sys_arch.c:707:0: style: The function 'sys_arch_netconn_sem_get' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:241:0: style: The function 'sys_check_core_locking' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:222:0: style: The function 'sys_lock_tcpip_core' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:236:0: style: The function 'sys_mark_tcpip_thread' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:280:0: style: The function 'sys_mbox_free' is never used. [unusedFunction]
+
+^
+test/unit/arch/sys_arch.c:241:0: style: The function 'sys_mbox_set_invalid' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:659:0: style: The function 'sys_mutex_free' is never used. [unusedFunction]
+
+^
+test/unit/arch/sys_arch.c:166:0: style: The function 'sys_mutex_set_invalid' is never used. [unusedFunction]
+
+^
+test/unit/arch/sys_arch.c:90:0: style: The function 'sys_sem_set_invalid' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/sys_arch.c:228:0: style: The function 'sys_unlock_tcpip_core' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/tapif.c:380:0: style: The function 'tapif_select' is never used. [unusedFunction]
+
+^
+src/core/tcp_in.c:118:0: style: The function 'tcp_input' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_md5/tcp_md5.c:424:0: style: The function 'tcp_md5_add_tx_options' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_md5/tcp_md5.c:386:0: style: The function 'tcp_md5_check_inpacket' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_md5/tcp_md5.c:339:0: style: The function 'tcp_md5_get_additional_option_length' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_md5/tcp_md5.c:86:0: style: The function 'tcp_md5_init' is never used. [unusedFunction]
+
+^
+contrib/addons/tcp_md5/tcp_md5.c:474:0: style: The function 'tcp_md5_setsockopt_hook' is never used. [unusedFunction]
+
+^
+src/core/tcp_in.c:2153:0: style: The function 'tcp_remove_sacks_gt' is never used. [unusedFunction]
+
+^
+src/core/timeouts.c:448:0: style: The function 'tcp_timer_needed' is never used. [unusedFunction]
+
+^
+src/core/tcp_in.c:2035:0: style: The function 'tcp_trigger_input_pcb_close' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:314:0: style: The function 'tcpip_callback' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:610:0: style: The function 'tcpip_callback_wait' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:557:0: style: The function 'tcpip_callbackmsg_delete' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:536:0: style: The function 'tcpip_callbackmsg_new' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:572:0: style: The function 'tcpip_callbackmsg_trycallback' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:591:0: style: The function 'tcpip_callbackmsg_trycallback_fromisr' is never used. [unusedFunction]
+
+^
+src/netif/lowpan6_ble.c:440:0: style: The function 'tcpip_rfc7668_input' is never used. [unusedFunction]
+
+^
+src/api/tcpip.c:442:0: style: The function 'tcpip_send_msg_wait_sem' is never used. [unusedFunction]
+
+^
+test/unit/arch/sys_arch.c:69:0: style: The function 'test_sys_arch_wait_callback' is never used. [unusedFunction]
+
+^
+src/apps/tftp/tftp.c:499:0: style: The function 'tftp_cleanup' is never used. [unusedFunction]
+
+^
+contrib/examples/tftp/tftp_example.c:137:0: style: The function 'tftp_example_init_client' is never used. [unusedFunction]
+
+^
+contrib/examples/tftp/tftp_example.c:131:0: style: The function 'tftp_example_init_server' is never used. [unusedFunction]
+
+^
+src/apps/tftp/tftp.c:536:0: style: The function 'tftp_put' is never used. [unusedFunction]
+
+^
+contrib/apps/udpecho_raw/udpecho_raw.c:71:0: style: The function 'udpecho_raw_init' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/vdeif.c:249:0: style: The function 'vdeif_init' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/vdeif.c:280:0: style: The function 'vdeif_poll' is never used. [unusedFunction]
+
+^
+contrib/ports/unix/port/netif/vdeif.c:288:0: style: The function 'vdeif_select' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
